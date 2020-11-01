@@ -1,7 +1,12 @@
 import React from 'react'
 
+import PageHeader from '../template/pageHeader'
+
 export default props => (
     <div>
-        <h1>About this App</h1>
+        <PageHeader name="About" small="us"></PageHeader>
+        <h4>History</h4>
+        <p>This site is for my learning about React and Redux</p>
+
     </div>
 )

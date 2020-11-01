@@ -1,10 +1,16 @@
 import React, { Component } from 'react'
 
-export default class Contact extends Component{
-    render(){
-        return(
+import PageHeader from '../template/pageHeader'
+import ContactForm from './contactForm'
+import ContactList from './contactList'
+
+export default class Contact extends Component {
+    render() {
+        return (
             <div>
-                <h1>my Contacts</h1>
+                <PageHeader name="Contacts" small='Add'></PageHeader>
+                <ContactForm />
+                <ContactList />
             </div>
         )
     }
